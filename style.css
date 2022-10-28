@@ -7,3 +7,456 @@
    box-sizing: border-box;
    text-decoration: none; 
 }
+.max-width{
+   max-width:1300px;
+   padding :0 80px;
+   margin:auto
+}
+/* <navbar styling> */
+.navbar{
+   position:fixed;
+   width:100%;
+   padding:30px 0;
+   /* background: crimson; */
+   font-family: Ubuntu,sans-serif;
+   transition: all 0.3s ease;
+
+}
+.navbar.sticky{
+   padding:10px 0;
+    background: crimson;
+}
+.navbar .max-width{
+   
+   padding-left: 80px;
+   margin: auto;
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;
+}
+
+
+.navbar .logo a {
+   font-size: 35px;
+   font-weight: 600;
+   color:black
+}
+.navbar .logo a span{
+   color:crimson
+}
+.navbar.sticky .logo a span{
+color:black
+}
+ .navbar .menu  li {
+   list-style: none;
+   display: inline-block;
+   }
+.navbar .menu li a {
+   color:black;
+   font-size: 18px;
+   font-weight: 500;
+   margin-left:25px ;
+   transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+   color:crimson
+}
+.navbar.sticky li a:hover
+{
+   color:white
+}
+
+/* <menu button styling> */
+
+.menu-btn{
+   color:white;
+ font-size: 23px;
+ cursor: pointer;
+   display: none;
+  }
+.navbar.menu .active{
+   left:0
+}
+
+/* <home section styling> */
+
+.home{
+   display:flex;
+   background: url("./images/final.jpeg") no-repeat center;
+   /* background-repeat: no-repeat; */
+  background-size: 100% 100%;
+  height:100vh;
+  min-height: 500px;
+  font-family: 'Ubuntu',sans-serif;
+}
+.home .max-width{
+   margin:auto 0 auto 40px;
+   
+    justify-content: space-between;
+   
+   
+   }
+   .home .home-content .text-1{
+      color:black;
+      font-size: 27px;
+      font-family: Ubuntu,sans-serif;
+   }
+   .home .home-content .text-2{
+      color:black;
+      font-size: 75px;
+      font-weight: 600;
+      margin-left: -3px;
+      font-family: Ubuntu,sans-serif;
+   }
+   
+.home .home-content .text-3{
+   color:black;
+   font-size: 40px;
+   margin: 5px 0  ;
+   font-family: Ubuntu,sans-serif;
+
+}
+
+.home .home-content .text-3 span{
+   color:crimson;
+   font-size: 30px;
+   margin-top: 15px 0;
+   font-weight: 500;
+   font-family: Ubuntu,sans-serif;
+
+}
+/* .jj{
+   height: 600px;
+   padding-top:100px;
+  margin-right: -100px;
+   border-radius: 30%;
+   border:0%
+
+}
+
+.bodysection{
+   background-color:rgb(248, 246, 242);
+} */
+.home .home-content{
+   padding:240px ;
+   padding-left: 100px;
+
+}
+
+
+.home .home-content a{
+   display:inline-block;
+   background: crimson;
+   color:#fff;
+   font-size: 25px;
+ padding :12px 36px;
+ margin-top: 20px;
+ border: 2px solid crimson;
+ border-radius: 6px;
+ transition: all 0.3s ease;
+}
+/* <about section styling> */
+section {
+   padding :50px 0
+}
+.about{
+font-family: 'Poppins',sans-serif;
+
+}
+.about .title{
+   position: relative;
+   text-align: center;
+   font-size: 40px;
+   margin-bottom: 40px;
+   padding-bottom: 20px;
+   font-weight: 600;
+   font-family: 'Ubuntu',sans-serif;  
+}
+.about .title::before{
+   content:"";
+   position: absolute;
+   bottom: 0px;
+   left:50%;
+   width:180px;
+   height:3px;
+   background: #111;
+   transform: translateX(-50%);
+}
+.about .title::after{
+   content:"who i am";
+   position: absolute;
+   bottom: -10px;
+   left:50%;
+   font-size: 20px;
+   color:crimson;
+  padding:5px;
+   background: #fff;
+   transform: translateX(-50%);
+}
+.about .about-content{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+}
+.about .about-content .left {
+width:35%
+}
+.about .about-content .left img {
+    width:300px;
+    height:300px;
+    border-radius: 5%;
+}
+.about .about-content .right {
+   width:65%;
+   margin-left: -50px;
+   
+   }
+   .about .about-content .right .text {
+      font-weight: 600;
+      font-size: 30px;
+      bottom:20px;
+      color:crimson
+      }
+
+      .about .about-content .right li{
+         text-align: justify;
+         font-family: 'Poppins',sans-serif;
+         font-weight: 100;
+         font-size: 18px;
+         
+
+      }
+
+      .about .about-content .right a{
+         display:inline-block;
+         background: crimson;
+         color:#fff;
+         font-size: 20px;
+       padding :1px 36px;
+       margin-top: 25px;
+       border: 2px solid crimson;
+       border-radius: 6px;
+       transition: all 0.3s ease;
+      }
+      .about .about-content .right a:hover{
+         color:crimson;
+         background: none;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+/* <media query styling section> */
+@media(max-width:1104px)
+{
+   .home .max-width{
+      margin-left: 0px;
+   }
+}
+@media(max-width:991px)
+{
+   .max-width{
+      padding:0 50px;
+   }
+}
+@media(max-width:947px)
+{
+   
+   .navbar .menu{
+      position:fixed;
+      height:100vh;
+      width:100%;
+      left:-100%;
+      top:0;
+      background: #111;
+      text-align: center;
+      padding-top: 80px;
+      transition: all 0.3s ease;
+      
+      
+   }
+   .navbar .menu.active{
+      left:0
+   }
+   .navbar .menu li {
+      display:block;
+      
+     
+   }
+   .navbar .menu li a  {
+      color: #fff;
+      display: block;
+      margin :20px 0;
+      font-size: 25px;
+   }
+   .navbar .menu li  a:hover{
+      color:red
+
+   }
+
+   .menu-btn i.active:before{
+      content:"\f00d"
+
+   }
+.menu-btn{
+   display: block;
+z-index: 999;
+}
+
+.home .home-content .text-2{
+   color:black;
+   font-size: 70px;
+ 
+}
+.home .home-content .text-3{
+   color:black;
+   font-size: 35px;
+   
+
+}
+
+.max-width{
+   max-width: 800px;
+}
+
+ .about .about-content .coloumn{
+   width:100%;
+
+   padding-left: 60px;
+ }
+ .about .about-content .left{
+   display: flexbox;
+   justify-content: center;
+   
+ }
+ .about .about-content .right{
+ flex:100%
+
+ }
+ .about .about-content .text{
+   font-size: 18px;
+   
+ }
+ 
+   
+  
+   
+   
+   
+   .home .home-content a{
+      display:inline-block;
+      background: crimson;
+      color:#fff;
+      font-size: 23px;
+    padding :10px 30px;
+    margin-top: 20px;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+   }
+   .home .home-content a:hover{
+      color:white;
+      background: none;
+   }
+   
+
+.home .home-content .text-3 span{
+   color:crimson;
+   font-size: 22px;
+   margin-top: 15px 0;
+   font-weight: 500;
+   font-family: 'Ubuntu',sans-serif;
+
+}
+
+
+
+
+@media(max-width:690px)
+{
+   .max-width{
+      padding:0 23px;
+   }
+  
+   .home .home-content .text-2{
+      color:black;
+      font-size: 60px;
+    
+   }
+   .home .home-content .text-3{
+      color:black;
+      font-size: 32px;
+      
+   
+   }
+   .home .home-content a{
+      display:inline-block;
+      background: crimson;
+      color:#fff;
+      font-size: 20px;
+    padding :8px 20px;
+    margin-top: 20px;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+   }
+
+}
+@media(max-width:575px)
+{ .home{
+   padding-top: -100px;
+   display:flex;
+   background: url("./images/final.jpeg") ;
+   /* background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
+  height:80vh;
+  min-height: 500px;
+  font-family: 'Ubuntu',sans-serif;
+}
+.home .max-width{
+   /* margin:auto 0 auto 40px; */
+   margin-top: -100px;
+    justify-content: space-between;
+   
+   
+   }
+   
+   .home .home-content .text-2{
+      color:black;
+      font-size: 50px;
+    
+   }
+   .home .home-content .text-3{
+      color:black;
+      font-size: 27px;
+      
+   
+   }
+
+}
+/* @media(max-width:400px)
+{
+   .max-width{
+      padding:0 10px;
+   }
+   .navbar .menu{
+      position:fixed;
+      height:100vh;
+      width:100%;
+      left:0;
+      top:0;
+      background:red;
+
+   }
+} */
+
