@@ -98,6 +98,23 @@ color:black
    left:0
 }
 
+.scroll-up-button{
+   /* postion:fixed; */
+   height: 45px;
+   width:42px;
+   background-color: crimson;
+   right:30px;
+   bottom: 30px;
+   /* text-align: center;
+   line-height: 45px;
+   color:#fff;
+   z-index: 9999;
+   font-size: 30px;
+   border-radius: 6px;
+   cursor: pointer;
+   opacity: 0;
+   pointer-events: none; */
+}
 /* <home section styling> */
 
 .home{
@@ -215,7 +232,7 @@ section .title::after{
 
 /* <about section styling> */
 
-.about,.project,.services,.skills {
+.about,.project,.services,.skills ,.contact {
 font-family: 'Poppins',sans-serif;
 
 }
@@ -421,7 +438,7 @@ background:crimson;
    padding-top: 20px;
    color:#111
 }
-.skills .title::before{
+.skills, .title::before{
    background-color: #111;
    
    
@@ -609,6 +626,131 @@ color: #111;
    background-color: crimson;
 }
 
+
+/* <contact section styling> */
+.contact{
+   
+   background-color: #fff;
+   color: #111;
+}
+.contact .title::after{
+   content:"get in touch";
+   background-color: #fff;
+}
+.contact .contact-content{
+   display: flex;
+   width:70%;
+   margin: auto;
+   align-items: center;
+   justify-content: space-between;
+   
+   
+}
+.contact  .title::before{
+   background-color: #111;
+   
+   
+
+}
+
+.contact .contact-content .text{
+   font-weight: bold;
+   font-size: 25px;
+   }
+   .contact .contact-content .left .row{
+      display: flex;
+      
+   }
+   .contact .contact-content .left .row i{
+      font-size: 30px;
+      margin-top: 10px;
+      color: crimson;
+   }
+   .contact .contact-content .left .row{
+      margin-top: 15px;
+   }
+   .contact .contact-content .left .row .info{
+      margin-top: 10px;
+      margin-left: 40px;
+line-height: 20px;
+   }
+   .contact .contact-content .left .row .info .head{
+      font-weight: bold;
+   }
+
+   .contact .contact-content .right{
+width:70%;
+      
+    
+      margin-left: 80px;    
+      }
+      .contact  .right form  .fieldstwo{
+         display: flex;
+         margin-top: 10px;
+      }
+      .contact  .right form  .field,
+      .contact  .right form .fields .field{
+height:45px;
+width:100%;
+margin-bottom: 15px;
+}
+.contact  .right form  .field input,
+.contact  .right form .textarea textarea{
+   height:100%;
+   width:100%;
+   border: 1px solid lightgray;
+   border-radius: 6px;
+   outline: none;
+   padding: 0 15px;
+   font-size: 17px;
+   font-family: "Poppins" sans-serif;
+}
+.contact  .right form .name{
+   margin-right: 10px;
+}
+.contact  .right form .email{
+   margin-left: 10px;
+}
+.contact  .right form .textarea textarea{
+   padding-top: 10px;
+   height:80px;
+   width: 100%;
+   resize: none;
+}
+.contact  .right form   .button button{
+   margin-top: 33px;
+   height:47px;
+   width:170px;
+   border: 2px solid crimson;
+   background:crimson;
+   color:#fff;
+   font-size: 20px;
+   font-weight: 500;
+   border-radius: 6px;
+   transition: all 0.3s  ease;
+   cursor: pointer;
+}
+.contact  .right form .button button :hover{
+   background-color:none;
+   color: crimson;
+}
+
+/* <footer section styling> */
+footer{
+   background-color:#111;
+   padding: 20px 23px;
+   color:#fff;
+   display: flex;
+   justify-content: center;
+   
+}
+footer span a{
+   color: crimson;
+   text-decoration: none;
+}
+footer span a:hover{
+   text-decoration: underline;
+}
 /* <media query styling section> */
 @media(max-width:1104px)
 {
@@ -650,6 +792,7 @@ color: #111;
       width:100%;
       left:-100%;
       top:0;
+      
       background: #111;
       text-align: center;
       padding-top: 80px;
@@ -662,11 +805,12 @@ color: #111;
    }
    .navbar .menu li {
       display:block;
-      
+      background-color: crimson;
      
    }
    .navbar .menu li a  {
       color: #fff;
+    
       display: block;
       margin :20px 0;
       font-size: 25px;
@@ -777,6 +921,27 @@ height:90%
   
   
 }
+.contact .contact-content{
+display: inline;
+   width:100%;
+   
+   margin-left: 50px;
+   justify-content: space-between;
+   
+   
+}
+.contact .contact-content .left{
+   
+      width:100%;
+      
+      margin-left: 70px;
+      justify-content: space-between;
+      
+      
+   }
+   .contact .contact-content .right{
+      margin-top: 40px;
+   }
 /* .skills .skills-content {
    
    display:inline-block;
@@ -891,7 +1056,12 @@ height:90%
    
    
    }
-   
+   .contact .contact-content .left .row .info{
+      margin-top: 10px;
+      margin-left: 40px;
+      font-size: 12px;
+line-height: 20px;
+   }
    .home .home-content .text-2{
       color:black;
       font-size: 50px;

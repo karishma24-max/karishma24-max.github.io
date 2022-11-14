@@ -13,15 +13,22 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet"  href="
         https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  />
     </head>
     <body>
-<div class="kiya">
+           
+    <!-- <div class="scroll-up-button">
+        <i class="fa-solid fa-caret-up"></i>
+                </div>  -->
      <nav class="navbar">
+       
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
             
@@ -241,7 +248,7 @@
 <h2 class="title"> My Skills</h2>
 <div class="skills-content">
 <div class="coloumn left">
-    <div class="logo">
+    <div class="logo" data-aos="flip-up">
     <img src="https://sayan1portfolio.netlify.app/assets/html5.def2d6d2.svg"/>
     <img src="https://sayan1portfolio.netlify.app/assets/css.106e7ff7.svg"/>
     <img src="https://sayan1portfolio.netlify.app/assets/js-official.5cd82e09.svg"/>
@@ -451,17 +458,82 @@
 
 </section>
 
+<!-- <Contact Section> -->
+
+<section class="contact">
+    <div class="max-width">
+        <h2 class="title">Contacts me</h2>
+        <div class="contact-content">
+        <div class="coloumn left">
+            <div class="text">Get in Touch</div>
+            <div class="icons">
+                <div class="row">
+                    <i class="fas fa-user"></i>
+                    <div class="info">
+                        <div class="head">Name</div>
+                        <div class="sub-title">Karishma Chauhan</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info">
+                        <div class="head">Address</div>
+                        <div class="sub-title">Shivpuri(M.P)</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info">
+                        <div class="head">Email</div>
+                        <div class="sub-title">Chauhankarishma824@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="coloumn right">
+            <div class="text">Message me</div>
+            <form>
+                <div class="fields">
+                <div class="fieldstwo">
+                    <div class="field name">
+                        <input type="text"  placeholder="name" required/>
+                    </div>
+                    <div class="field email">
+                        <input type="email" placeholder="email" required/>
+                    </div>
+                </div>
+                    <div class="field subject">
+                        <input type="text" placeholder="subject" class="subjectji" required/>
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Describe Project..." required></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Send Message</button>
+                   
+                </div >
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer>
+<span>Created By<a href="#"> Karishma Chauhan</a> | <span class="far fa-copyrught"></span> 2022 All rights reserved.</span>
+</footer>
 
 
 
 
 
-
-
-
-
-
-<script src="script.js"></script>
+<script src="script.js">
+      
+</script>
         
     </body>
 </html>
