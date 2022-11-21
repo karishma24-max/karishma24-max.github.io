@@ -30,6 +30,25 @@ section {
    padding :0 80px;
    margin:auto
 }
+.scroll-up-btn{
+   position: fixed;
+   height: 45px;
+   width: 42px;
+   font-size: 50px;
+   z-index: 9999;
+   right:10px;
+   bottom:10px;
+   color: crimson;
+   cursor:pointer;
+   opacity: 0;
+   pointer-events: none;
+   transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+   opacity: 1;
+   pointer-events: auto;
+   bottom:30px;
+}
 /* <navbar styling> */
 .navbar{
    position:fixed;
@@ -99,13 +118,13 @@ color:black
 }
 
 .scroll-up-button{
-   /* postion:fixed; */
+position:fixed;
    height: 45px;
    width:42px;
    background-color: crimson;
    right:30px;
-   bottom: 30px;
-   /* text-align: center;
+   bottom: 10px;
+   text-align: center;
    line-height: 45px;
    color:#fff;
    z-index: 9999;
@@ -113,7 +132,13 @@ color:black
    border-radius: 6px;
    cursor: pointer;
    opacity: 0;
-   pointer-events: none; */
+   pointer-events: none;
+   transition: all 0.3s ease;
+}
+.scroll-up-button .show{
+   bottom:30px;
+   opacity: 1;
+   pointer-events: auto
 }
 /* <home section styling> */
 
@@ -197,6 +222,30 @@ color:black
 
 /* <all similar styling> */
 
+/* <git style> */
+.git-hub{
+   width: 100%;
+   margin-top: 10px;
+   text-align: center;
+
+}
+
+.git-hub h2{
+   color: crimson;
+   font-family: 'Poppins', sans-serif;
+}
+
+.github-img-cont{
+   margin-top: 10px;
+width: 100%;
+
+
+
+}
+
+.github-img-cont img{
+   width: 100%;
+}
 
 
 section .title{
@@ -438,16 +487,22 @@ background:crimson;
    padding-top: 20px;
    color:#111
 }
-.skills, .title::before{
-   background-color: #111;
+/* .skills, .title::before{
+   background-color:#fff;
    
    
 
+} */
+.skills .title ::before{
+   background-color: #111;
+   color: #fff;
+  
 }
 
 .skills .title::after{
    content:"what i know";
-   background-color: #fff;
+   background-color:#fff;
+   
 
   
 }
@@ -568,9 +623,24 @@ color: #111;
 }
 
 /* <Education section styling> */
-
-.education .card{
+.education{
+ 
+   margin-top: 30px;
+   color:#fff;
+   padding-top: 20px;
+   background-color:#111
+}
+.education .title::before{
+background-color:#fff;
+}
+.education .title::after{
+   content:"what i know";
+   background-color: #111;
+   
+}
+.education .max-width .card{
    display:flex;
+   
    justify-content:center;
   
    color: antiquewhite;
@@ -622,6 +692,7 @@ color: #111;
 
   
 }
+
 .education .card   :hover {
    background-color: crimson;
 }
@@ -751,11 +822,28 @@ footer span a{
 footer span a:hover{
    text-decoration: underline;
 }
+
 /* <media query styling section> */
+
+@media(max-width:1295px)
+{
+   .education .box .content h1{
+      font-weight: 200;
+      font-size: medium;
+      line-height: 15px;
+      
+   }
+}
 @media(max-width:1104px)
 {
    .home .max-width{
       margin-left: 0px;
+   }
+   .education .box .content h1{
+      font-weight: 200;
+      font-size: medium;
+      line-height: 15px;
+      
    }
    .skills .skills-content .left .logo{
    
@@ -782,10 +870,28 @@ footer span a:hover{
    .max-width{
       padding:0 50px;
    }
+   .education .box .content h1{
+      font-weight: 200;
+      font-size: medium;
+      line-height: 15px;
+      
+   }
 }
 @media(max-width:947px)
 {
    
+   .education .box .content h1{
+      font-weight: 200;
+      font-size: medium;
+      line-height: 15px;
+      
+   }
+   .education .box .content h4{
+      font-weight: 200;
+      font-size: small;
+      line-height: 15px;
+      
+   }
    .navbar .menu{
       position:fixed;
       height:100vh;
@@ -964,10 +1070,11 @@ display: inline;
 }
 @media(max-width:770px)
 {
-   .education .card{
+   .education .max-width .card{
       
       display: inline;
    }
+   
    .education .box {
       
       margin-top: 40px;
@@ -981,6 +1088,9 @@ display: inline;
       text-align: center;
    
      
+   } 
+   .education .box .content{
+      font-size: 15px;
    }
 }
 @media(max-width:690px)

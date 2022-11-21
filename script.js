@@ -13,14 +13,23 @@ $('.navbar').addClass("sticky")
         $('.scroll-up-btn').removeClass("show");
     }
 })
-
-
+// slide up script
+$('.scroll-up-btn').click(function(){
+    $('html').animate({scrollTop:0})
+})
   
     $('.menu-btn').click(function(){
         $('.navbar .menu ').toggleClass("active")
         $('.menu-btn i ').toggleClass("active")
     });
+{/* <typing animation script> */}
 
+var typed = new Typed(".typing", {
+    strings: ["Full Stack Developer 💻", " Web Designer 🖋", "MERN Stack Devloper 💻","Enthusiastic Dev 😎"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
     // <owl carousel script>
     $('.carousel').owlCarousel({
         margin:20,
