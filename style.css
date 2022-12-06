@@ -3,7 +3,8 @@
 body{
    width:100%;
    margin: 0;
-   padding:0
+   padding:0;
+   background-color: #fff;
 }
 html {
    scroll-behavior: smooth;
@@ -29,6 +30,9 @@ section {
    max-width:100%;
    padding :0 80px;
    margin:auto
+}
+section{
+   width:100%
 }
 .scroll-up-btn{
    position: fixed;
@@ -825,7 +829,7 @@ footer span a:hover{
        display: flex;
        
       
-     
+     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPwAAAB+CAMAAAA3DYyGAAAAA1BMVEX///+nxBvIAAAANklEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAvA3yGAAH836OeAAAAAElFTkSuQmCC");
        background-size:cover;
        color: #fff;
        background-attachment: fixed;
@@ -840,11 +844,21 @@ footer span a:hover{
 
 
 @media (max-width: 947px){
+   .skills .skills-content .left .logo{
+      /* border: 10px solid black; */
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap:20px;
+  
+  padding:0
+    
+  }
    .home{
        display: flex;
-       background: url("images/final2.jpeg") no-repeat fixed ;
+       background: url(none);
       
        width: 100%;
+       height:50vh;
        background-size:cover;
        color: #fff;
        background-attachment: fixed;
@@ -853,7 +867,7 @@ footer span a:hover{
    }
    
    .home .home-content{
-      padding:130px ;
+      padding:0px ;
       padding-left: 80px;
    
    }
@@ -924,6 +938,20 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+   .education .max-width .card{
+      display:inline-block;
+     margin-left: 30px;
+     
+      color: antiquewhite;
+     
+   }
+
+   .education .box {
+     width:100%;
+     margin:auto;
+     align-items: center;
+     margin-top: 30px;
+   }
    .contact .contact-content{
       display: inline;
    
@@ -933,14 +961,17 @@ footer span a:hover{
       
       
    }
+   .contact .contact-content .right{
+    margin-top: 20px;   
+            }
    .home{
    
       display:flex;
-      background: url("./images/final2.jpeg") no-repeat center;
+      background: url(none) no-repeat center;
       /* background-repeat: no-repeat; */
      /* background-size: ; */
      background-size: cover;
-     height:100vh;
+     height:50vh;
      min-height: 500px;
      background-attachment: fixed;
      font-family: 'Ubuntu',sans-serif;
@@ -976,16 +1007,23 @@ footer span a:hover{
 
 
 @media (max-width: 500px) {
-
-   
+.navbar{
+   padding:0;
+   margin:0;
+}
+   .navbar.sticky{
+   padding:0;
+   margin:0;
+       background: crimson;
+   }
    .home{
    
       display:flex;
-      background: url("./images/final2.jpeg") no-repeat center;
+      background: url(none),no-repeat center;
       /* background-repeat: no-repeat; */
      /* background-size: ; */
      background-size: cover;
-     height:100vh;
+     height:50vh;
      min-height: 500px;
      background-attachment: fixed;
      font-family: 'Ubuntu',sans-serif;
@@ -1000,14 +1038,14 @@ footer span a:hover{
        /* border: 10px solid black; */
       display: grid;
       grid-template-columns: repeat(2,1fr);
-      
+      gap:20px;
    
    padding:0
      
    }
    .skills .skills-content .left .logo img{
-      width: 70%;
-      height: 70%;
+      width: 100%;
+      height: 100%;
       
       border-radius: 50%;
    }
@@ -1048,15 +1086,5 @@ footer span a:hover{
     }
 
 
-    .home{
-        display: flex;
-        background: url("images/final2.jpeg") no-repeat fixed ;
-       
-      
-        background-size:cover;
-        color: #fff;
-        /* background-attachment: fixed; */
-       
- 
-    }
+   
 }
