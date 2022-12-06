@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 body{
    width:100%;
-   margin: 0%;
-   padding:0%
+   margin: 0;
+   padding:0
 }
 html {
    scroll-behavior: smooth;
@@ -20,7 +20,7 @@ html {
    
 }
 section {
-   padding:50px 0;
+   padding:100px 0;
    
    
    
@@ -90,7 +90,8 @@ color:black
    display: inline-block;
    }
 .navbar .menu li a {
-   color:black;
+   color:white;
+   display: block;
    font-size: 18px;
    font-weight: 500;
    margin-left:25px ;
@@ -108,7 +109,7 @@ color:black
 /* <menu button styling> */
 
 .menu-btn{
-   color:white;
+   color:red;
  font-size: 23px;
  cursor: pointer;
    display: none;
@@ -143,7 +144,7 @@ position:fixed;
 /* <home section styling> */
 
 .home{
-   width:100%;
+   
    display:flex;
    background: url("./images/final.jpeg") no-repeat center;
    /* background-repeat: no-repeat; */
@@ -151,6 +152,7 @@ position:fixed;
   background-size: cover;
   height:100vh;
   min-height: 500px;
+  background-attachment: fixed;
   font-family: 'Ubuntu',sans-serif;
 }
 .home .max-width{
@@ -175,7 +177,7 @@ position:fixed;
    
 .home .home-content .text-3{
    color:black;
-   font-size: 40px;
+   font-size: 25px;
    margin: 5px 0  ;
    font-family: Ubuntu,sans-serif;
 
@@ -183,10 +185,8 @@ position:fixed;
 
 .home .home-content .text-3 span{
    color:crimson;
-   font-size: 30px;
-   margin-top: 15px 0;
    font-weight: 500;
-   font-family: Ubuntu,sans-serif;
+ 
 
 }
 /* .jj{
@@ -427,9 +427,7 @@ transition: all 0.3s ease;
    
 }
 .tools-section a {
-
-
- color:white
+  color:white
 }
 
 .owl-dots{
@@ -454,25 +452,6 @@ border-radius: 14px;
 background:crimson;
 }
 
-/* <service section styling> */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* <skill section styling> */
 
@@ -487,12 +466,7 @@ background:crimson;
    padding-top: 20px;
    color:#111
 }
-/* .skills, .title::before{
-   background-color:#fff;
-   
-   
 
-} */
 .skills .title ::before{
    background-color: #111;
    color: #fff;
@@ -596,11 +570,8 @@ padding:0
 
 .git-hub{
    width: 100%;
-   
    text-align: center;
-   
-
-}
+   }
 
 .git-hub p{
    color: crimson;
@@ -612,8 +583,8 @@ padding:0
 
 .github-img-cont{
    margin-top: 10px;
-width: 100%;
-color: #111;
+   width: 100%;
+   color: #111;
 
 
 }
@@ -629,6 +600,10 @@ color: #111;
    color:#fff;
    padding-top: 20px;
    background-color:#111
+}
+.eduhead{
+   font-size: 150px;
+   font-weight: 500;
 }
 .education .title::before{
 background-color:#fff;
@@ -692,6 +667,7 @@ background-color:#fff;
 
   
 }
+
 
 .education .card   :hover {
    background-color: crimson;
@@ -822,382 +798,265 @@ footer span a{
 footer span a:hover{
    text-decoration: underline;
 }
-
-/* <media query styling section> */
-
-@media(max-width:1295px)
-{
-   .education .box .content h1{
-      font-weight: 200;
-      font-size: medium;
-      line-height: 15px;
-      
-   }
-}
-@media(max-width:1104px)
-{
-   .home .max-width{
-      margin-left: 0px;
-   }
-   .education .box .content h1{
-      font-weight: 200;
-      font-size: medium;
-      line-height: 15px;
-      
-   }
-   .skills .skills-content .left .logo{
-   
-   
-      
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap:10px;
-   
-   padding:0
-     
-   }
-   .skills .skills-content .left .logo img{
-   
-   width:90%;
-   height:80%
-     
-     
-   }
-
-}
-@media(max-width:991px)
-{
+/* responsive media query start */
+@media (max-width: 1104px) {
    .max-width{
-      padding:0 50px;
+      max-width:100%;
+      padding :0 80px;
+      margin:auto
    }
-   .education .box .content h1{
-      font-weight: 200;
-      font-size: medium;
-      line-height: 15px;
+      .home .home-content .text-2{
+         color:black;
+         font-size: 45px;
+         font-weight: 600;
+         margin-left: -3px;
+         font-family: Ubuntu,sans-serif;
+      }
+   .about .about-content .left img{
+       height: 350px;
+       width: 300px;
+   }
+   
+   
+}
+@media (max-width: 991px) {
+
+   .home{
+       display: flex;
+       
       
+     
+       background-size:cover;
+       color: #fff;
+       background-attachment: fixed;
+      
+
+   }
+
+   .max-width{
+       padding: 0 50px;
    }
 }
-@media(max-width:947px)
-{
-   
-   .education .box .content h1{
-      font-weight: 200;
-      font-size: medium;
-      line-height: 15px;
+
+
+@media (max-width: 947px){
+   .home{
+       display: flex;
+       background: url("images/final2.jpeg") no-repeat fixed ;
       
+       width: 100%;
+       background-size:cover;
+       color: #fff;
+       background-attachment: fixed;
+      
+
    }
-   .education .box .content h4{
-      font-weight: 200;
-      font-size: small;
-      line-height: 15px;
-      
+   
+   .home .home-content{
+      padding:130px ;
+      padding-left: 80px;
+   
+   }
+   .menu-btn{
+       display: block;
+       z-index: 999;
+   }
+   .menu-btn i.active:before{
+       content: "\f00d";
    }
    .navbar .menu{
-      position:fixed;
-      height:100vh;
-      width:100%;
-      left:-100%;
-      top:0;
-      
-      background: #111;
-      text-align: center;
-      padding-top: 80px;
-      transition: all 0.3s ease;
-      
-      
+       position: fixed;
+       height: 100vh;
+       width: 90%;
+       left: -100%;
+       top: 0;
+       background: #111;
+       text-align: center;
+       padding-top: 80px;
+       transition: all 0.3s ease;
    }
    .navbar .menu.active{
-      left:0
+       left: 0;
    }
-   .navbar .menu li {
-      display:block;
-      background-color: crimson;
-     
+   .navbar .menu li{
+       display: block;
    }
-   .navbar .menu li a  {
-      color: #fff;
-    
-      display: block;
-      margin :20px 0;
-      font-size: 25px;
+   .navbar .menu li a{
+       display: inline-block;
+       margin: 20px 0;
+       font-size: 25px;
    }
-   .navbar .menu li  a:hover{
-      color:red
-
+   .home .home-content .text-2{
+       font-size: 70px;
    }
-
-   .menu-btn i.active:before{
-      content:"\f00d"
-
+   .home .home-content .text-3{
+       font-size: 35px;
    }
-.menu-btn{
-   display: block;
-z-index: 999;
-}
-
-.home .home-content .text-2{
-   color:black;
-   font-size: 70px;
- 
-}
-.home .home-content .text-3{
-   color:black;
-   font-size: 35px;
-   
-
-}
-
-.max-width{
-   max-width: 800px;
-}
-
- .about .about-content .coloumn{
-   width:100%;
-display: inline;
-justify-content: center;
-   padding-left: 60px;
- }
- .about .about-content .left{
-   /* display: flexbox; */
-   
-   text-align: center;
-   
-   
- }
- .about .about-content .right{
- flex:100%
-
- }
- .about .about-content .text{
-   margin-top: 20px;
-   font-size: 18px;
-   text-align: center;
-   
- }
- .kv{
-   width:50%;
-   height: 50%;
- }
-   
- 
-   
-   
-   
    .home .home-content a{
-      display:inline-block;
-      background: crimson;
-      color:#fff;
-      font-size: 23px;
-    padding :10px 30px;
-    margin-top: 20px;
-    border: 2px solid crimson;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+       font-size: 23px;
+       padding: 10px 30px;
    }
-   .home .home-content a:hover{
-      color:white;
-      background: none;
+   .max-width{
+       max-width: 930px;
    }
-   
-
-.home .home-content .text-3 span{
-   color:crimson;
-   font-size: 22px;
-   margin-top: 15px 0;
-   font-weight: 500;
-   font-family: 'Ubuntu',sans-serif;
-
-}
-
-.skills .skills-content .left .logo{
-   
-   
-      
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   gap:10px;
-
-padding:0
+   .about .about-content .column{
+       width: 100%;
+   }
+   .about .about-content .left{
+       display: flex;
+       justify-content: center;
+       margin: 0 auto 60px;
+   }
+   .about .about-content .right{
+       flex: 100%;
+       padding-left: 50px;
+   }
+   .services .serv-content .card{
+       width: calc(50% - 10px);
+       margin-bottom: 20px;
+   }
+   .skills .skills-content .column,
+   .contact .contact-content .column{
+       width: 100%;
+       margin-bottom: 35px;
+   }
   
 }
-.skills .skills-content .left .logo img{
 
-width:90%;
-height:90%
-  
-  
-}
-.contact .contact-content{
-display: inline;
-   width:100%;
+@media (max-width: 690px) {
+   .contact .contact-content{
+      display: inline;
    
-   margin-left: 50px;
-   justify-content: space-between;
-   
-   
-}
-.contact .contact-content .left{
-   
-      width:100%;
-      
-      margin-left: 70px;
+      margin: auto;
+      align-items: center;
       justify-content: space-between;
       
       
    }
-   .contact .contact-content .right{
-      margin-top: 40px;
-   }
-/* .skills .skills-content {
+   .home{
    
-   display:inline-block;
-   
-}
-.skills{
-   font-family: 'Poppins',sans-serif;
-   font-weight: bold;
-   background-color: #fff;
-   width:1200px;
-   height:1000px;
-   margin-top: 30px;
-   padding-top: 20px;
-   color:#111
-} */
-
-/* .skills .skills-content .left{
-   margin-left:200px
-} */
-}
-@media(max-width:770px)
-{
-   .education .max-width .card{
-      
-      display: inline;
+      display:flex;
+      background: url("./images/final2.jpeg") no-repeat center;
+      /* background-repeat: no-repeat; */
+     /* background-size: ; */
+     background-size: cover;
+     height:100vh;
+     min-height: 500px;
+     background-attachment: fixed;
+     font-family: 'Ubuntu',sans-serif;
    }
    
-   .education .box {
-      
-      margin-top: 40px;
-      padding-top: 30px;
-      padding-bottom: 20px;
-      width:50%;
-      height:100%;
-      border-radius: 5%;
-      background-color: #222;
-      
-      text-align: center;
-   
-     
-   } 
-   .education .box .content{
-      font-size: 15px;
-   }
-}
-@media(max-width:690px)
-{
    .max-width{
-      padding:0 23px;
+       padding: 0 23px;
    }
    .home .home-content .text-2{
-      color:black;
-      font-size: 60px;
-    
+       font-size: 60px;
    }
    .home .home-content .text-3{
-      color:black;
-      font-size: 32px;
-      
-   
+       font-size: 32px;
    }
    .home .home-content a{
-      display:inline-block;
-      background: crimson;
-      color:#fff;
-      font-size: 20px;
-    padding :8px 20px;
-    margin-top: 20px;
-    border: 2px solid crimson;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+       font-size: 20px;
    }
-   .about .about-content .right{
-      flex:100%
-     
-      }
-   .skills .skills-content .left .logo{
-   
-   
+   .services .serv-content .card{
+       width: 100%;
+   }
+
+   /* /// */
+   .teams .carousel .card .box{
+  
+       display: flex;
+       flex-direction: column;
       
+       align-items: center;
+       justify-content: center;
+       transition: all 0.3s ease;
+   }
+}
+
+
+@media (max-width: 500px) {
+
+   
+   .home{
+   
+      display:flex;
+      background: url("./images/final2.jpeg") no-repeat center;
+      /* background-repeat: no-repeat; */
+     /* background-size: ; */
+     background-size: cover;
+     height:100vh;
+     min-height: 500px;
+     background-attachment: fixed;
+     font-family: 'Ubuntu',sans-serif;
+   }
+    .home .home-content .text-2{
+        font-size: 30px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .skills .skills-content .left .logo{
+       /* border: 10px solid black; */
       display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap:10px;
+      grid-template-columns: repeat(2,1fr);
+      
    
    padding:0
      
    }
    .skills .skills-content .left .logo img{
-   
-   width:90%;
-   height:90%
-     
-     
-   }
-
-
-   /* <git hub> */
-  
-
-}
-@media(max-width:575px)
-{ .home{
-   padding-top: -100px;
-   display:flex;
-   background: url("./images/final.jpeg") ;
-   /* background-repeat: no-repeat; */
-  /* background-size: 100% 100%; */
-  height:80vh;
-  min-height: 500px;
-  font-family: 'Ubuntu',sans-serif;
-}
-.home .max-width{
-   /* margin:auto 0 auto 40px; */
-   margin-top: -100px;
-    justify-content: space-between;
-   
-   
-   }
-   .contact .contact-content .left .row .info{
-      margin-top: 10px;
-      margin-left: 40px;
-      font-size: 12px;
-line-height: 20px;
-   }
-   .home .home-content .text-2{
-      color:black;
-      font-size: 50px;
-    
-   }
-   .home .home-content .text-3{
-      color:black;
-      font-size: 27px;
+      width: 70%;
+      height: 70%;
       
+      border-radius: 50%;
+   }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    
    
-   }
-  
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+
+    /* /// */
+    .teams .carousel .card .box{
+   
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+
+    .home{
+        display: flex;
+        background: url("images/final2.jpeg") no-repeat fixed ;
+       
+      
+        background-size:cover;
+        color: #fff;
+        /* background-attachment: fixed; */
+       
+ 
+    }
 }
-/* @media(max-width:400px)
-{
-   .max-width{
-      padding:0 10px;
-   }
-   .navbar .menu{
-      position:fixed;
-      height:100vh;
-      width:100%;
-      left:0;
-      top:0;
-      background:red;
-
-   }
-} */
-

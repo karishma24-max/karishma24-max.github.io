@@ -42,6 +42,7 @@ var typed = new Typed(".typing", {
                 items:1,
                 nav:false
             },
+            
             600:{
                 items:2,
                 nav:false
