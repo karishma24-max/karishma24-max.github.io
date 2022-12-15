@@ -42,7 +42,7 @@ section{
    z-index: 9999;
    right:10px;
    bottom:10px;
-   color: crimson;
+   color: rgb(192, 173, 173);
    cursor:pointer;
    opacity: 0;
    pointer-events: none;
@@ -66,7 +66,28 @@ section{
 }
 .navbar.sticky{
    padding:10px 0;
-    background: crimson;
+    background:rgb(100, 85, 85);
+
+}
+.tag{
+   border: 1px solid;
+   background-color: rgb(222, 198, 198);
+   width:200px;
+   height: 60px;
+   border-radius: 10px;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.tag2{
+   border: 1px solid;
+   background-color: rgb(52, 50, 50);
+   width:200px;
+   height: 60px;
+   color: #fff;
+   border-radius: 10px;
+   font-weight: bold;
+   font-size: 20px;
 }
 .navbar .max-width{
    
@@ -84,7 +105,7 @@ section{
    color:black
 }
 .navbar .logo a span{
-   color:crimson
+   color:rgb(100, 85, 85)
 }
 .navbar.sticky .logo a span{
 color:black
@@ -103,7 +124,7 @@ color:black
 }
 
 .navbar .menu li a:hover{
-   color:crimson
+   color:rgb(100, 85, 85)
 }
 .navbar.sticky li a:hover
 {
@@ -126,7 +147,7 @@ color:black
 position:fixed;
    height: 45px;
    width:42px;
-   background-color: crimson;
+   background-color: rgb(100, 85, 85);
    right:30px;
    bottom: 10px;
    text-align: center;
@@ -188,7 +209,7 @@ position:fixed;
 }
 
 .home .home-content .text-3 span{
-   color:crimson;
+   color:rgb(100, 85, 85);
    font-weight: 500;
  
 
@@ -214,12 +235,12 @@ position:fixed;
 
 .home .home-content a{
    display:inline-block;
-   background: crimson;
+   background: rgb(100, 85, 85);
    color:#fff;
    font-size: 25px;
  padding :12px 36px;
  margin-top: 20px;
- border: 2px solid crimson;
+ border: 2px solid rgb(100, 85, 85);
  border-radius: 6px;
  transition: all 0.3s ease;
 }
@@ -235,7 +256,7 @@ position:fixed;
 }
 
 .git-hub h2{
-   color: crimson;
+   color: rgb(100, 85, 85);
    font-family: 'Poppins', sans-serif;
 }
 
@@ -261,6 +282,7 @@ section .title{
    font-weight: 600;
    font-family: 'Ubuntu',sans-serif;  
 }
+/* }
 section .title::before{
    content:"";
    position: absolute;
@@ -277,11 +299,11 @@ section .title::after{
    bottom: -10px;
    left:50%;
    font-size: 20px;
-   color:crimson;
+   color:rgb(100, 85, 85);
   padding:5px;
    background: #fff;
    transform: translateX(-50%);
-}
+} */
 
 /* <about section styling> */
 
@@ -289,9 +311,7 @@ section .title::after{
 font-family: 'Poppins',sans-serif;
 
 }
-.about .title::after{
-   content:"who i am";
-}
+
 
 .about .about-content{
    display: flex;
@@ -316,7 +336,7 @@ width:35%
       font-weight: 600;
       font-size: 30px;
       bottom:20px;
-      color:crimson
+      color:rgb(100, 85, 85)
       }
 
       .about .about-content .right li{
@@ -330,26 +350,23 @@ width:35%
 
       .about .about-content .right a{
          display:inline-block;
-         background: crimson;
+         background: rgb(100, 85, 85);
          color:#fff;
          font-size: 20px;
        padding :1px 36px;
        margin-top: 25px;
-       border: 2px solid crimson;
+       border: 2px solid rgb(100, 85, 85);
        border-radius: 6px;
        transition: all 0.3s ease;
       }
       .about .about-content .right a:hover{
-         color:crimson;
+         color:rgb(100, 85, 85);
          background: none;
       }
 
 
 /* <project section styling> */
 
-.project .title::after{
-   content:"what i know";
-}
 .project{
    color:#fff;
    background:#111
@@ -369,7 +386,7 @@ text-align: center;
 transition: all 0.3s ease ;
 }
 .project .carousel .card:hover{
-   background:crimson ;
+   background:rgb(100, 85, 85) ;
 }
 .project .carousel .card .text{
    font-size: 25px;
@@ -444,7 +461,7 @@ transition: all 0.3s ease;
    margin:0 5px;
    outline: none!important;
    border-radius:50%;
-   border:2px solid crimson!important;
+   border:2px solid rgb(100, 85, 85)!important;
    transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -453,7 +470,7 @@ border-radius: 14px;
 }
 .owl-dot.active,
 .owl-dot:hover{
-background:crimson;
+background:rgb(100, 85, 85);
 }
 
 
@@ -471,19 +488,7 @@ background:crimson;
    color:#111
 }
 
-.skills .title ::before{
-   background-color: #111;
-   color: #fff;
-  
-}
 
-.skills .title::after{
-   content:"what i know";
-   background-color:#fff;
-   
-
-  
-}
 .skills .skills-content {
    
    display: flex;
@@ -547,7 +552,7 @@ padding:0
    width: 80%;
    left: 0;
    right: 0;
-   background: crimson;
+   background: rgb(100, 85, 85);
 }
 .skills .skills-content .right .html::before{
    width: 90%;
@@ -578,7 +583,7 @@ padding:0
    }
 
 .git-hub p{
-   color: crimson;
+   color: rgb(100, 85, 85);
    font-weight: 600;
    font-size: 25px;
    font-family: 'Poppins', sans-serif;
@@ -609,14 +614,7 @@ padding:0
    font-size: 150px;
    font-weight: 500;
 }
-.education .title::before{
-background-color:#fff;
-}
-.education .title::after{
-   content:"what i know";
-   background-color: #111;
-   
-}
+
 .education .max-width .card{
    display:flex;
    
@@ -674,20 +672,12 @@ background-color:#fff;
 
 
 .education .card   :hover {
-   background-color: crimson;
+   background-color: rgb(100, 85, 85);
 }
 
 
 /* <contact section styling> */
-.contact{
-   
-   background-color: #fff;
-   color: #111;
-}
-.contact .title::after{
-   content:"get in touch";
-   background-color: #fff;
-}
+
 .contact .contact-content{
    display: flex;
    width:70%;
@@ -715,7 +705,7 @@ background-color:#fff;
    .contact .contact-content .left .row i{
       font-size: 30px;
       margin-top: 10px;
-      color: crimson;
+      color: rgb(100, 85, 85);
    }
    .contact .contact-content .left .row{
       margin-top: 15px;
@@ -772,8 +762,8 @@ margin-bottom: 15px;
    margin-top: 33px;
    height:47px;
    width:170px;
-   border: 2px solid crimson;
-   background:crimson;
+   border: 2px solid rgb(100, 85, 85);
+   background:rgb(100, 85, 85);
    color:#fff;
    font-size: 20px;
    font-weight: 500;
@@ -783,7 +773,7 @@ margin-bottom: 15px;
 }
 .contact  .right form .button button :hover{
    background-color:none;
-   color: crimson;
+   color: rgb(100, 85, 85);
 }
 
 /* <footer section styling> */
@@ -796,7 +786,7 @@ footer{
    
 }
 footer span a{
-   color: crimson;
+   color: rgb(100, 85, 85);
    text-decoration: none;
 }
 footer span a:hover{
@@ -1014,7 +1004,7 @@ footer span a:hover{
    .navbar.sticky{
    padding:0;
    margin:0;
-       background: crimson;
+       background: rgb(100, 85, 85);
    }
    .home{
    
